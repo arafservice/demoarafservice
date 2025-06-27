@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fa" dir="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>پنل کاربری</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    /* دکمه اسکرول به بالا */
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      z-index: 1000;
+      display: none;
+    }
+
+   footer {
+  background: #212529;
+  color: white;
+  border-top: 4px solid #0d6efd;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 20px 20px 0 0;
+  padding: 40px 20px;
+  margin-top: 80px;
+}
+footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+}
+  </style>
+</head>
+<body class="bg-light" dir="rtl">
+
+  <!-- نوار منو بالا -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">پنل کاربری</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu"
+        aria-expanded="false"
+        aria-label="نمایش/پنهان منو"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">خانه</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">سبد خرید</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">سفارش‌ها</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">تنظیمات</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">خروج</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-4">
+
+    <!-- کارت‌ها -->
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://via.placeholder.com/400x200?text=محصول+۱" class="card-img-top" alt="محصول ۱" />
+          <div class="card-body">
+            <h5 class="card-title">محصول ۱</h5>
+            <p class="card-text">توضیح کوتاه درباره محصول اول.</p>
+            <a href="#" class="btn btn-primary">خرید</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://via.placeholder.com/400x200?text=محصول+۲" class="card-img-top" alt="محصول ۲" />
+          <div class="card-body">
+            <h5 class="card-title">محصول ۲</h5>
+            <p class="card-text">توضیح کوتاه درباره محصول دوم.</p>
+            <a href="#" class="btn btn-primary">خرید</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://via.placeholder.com/400x200?text=محصول+۳" class="card-img-top" alt="محصول ۳" />
+          <div class="card-body">
+            <h5 class="card-title">محصول ۳</h5>
+            <p class="card-text">توضیح کوتاه درباره محصول سوم.</p>
+            <a href="#" class="btn btn-primary">خرید</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  
+  <div class="container py-4">
+
+    <!-- <h2 class="mb-4">پنل کاربری</h2> -->
+
+    <!-- اطلاعات کاربر -->
+    <div class="card mb-4">
+      <div class="card-header bg-primary text-white">
+        اطلاعات کاربر
+      </div>
+      <div class="card-body">
+        <p><strong>نام کاربر:</strong> افشین</p>
+        <p><strong>شماره تماس:</strong> 09121234567</p>
+      </div>
+    </div>
+
+    <!-- سبد خرید -->
+    <div class="card">
+      <div class="card-header bg-success text-white">
+        سبد خرید شما
+      </div>
+      <div class="card-body p-0">
+        <table class="table table-striped mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>نام محصول</th>
+              <th>تعداد</th>
+              <th>قیمت واحد</th>
+              <th>قیمت کل</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>کفش ورزشی</td>
+              <td>2</td>
+              <td>500,000 تومان</td>
+              <td>1,000,000 تومان</td>
+            </tr>
+            <tr>
+              <td>کوله پشتی</td>
+              <td>1</td>
+              <td>300,000 تومان</td>
+              <td>300,000 تومان</td>
+            </tr>
+            <tr>
+              <td>کتاب آموزش برنامه‌نویسی</td>
+              <td>3</td>
+              <td>150,000 تومان</td>
+              <td>450,000 تومان</td>
+            </tr>
+          </tbody>
+          <tfoot class="table-light">
+            <tr>
+              <th colspan="3" class="text-end">جمع کل:</th>
+              <th>1,750,000 تومان</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  
+<!-- فقط یک بار از footer استفاده کن -->
+<footer class="mt-5 pt-4 pb-4">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <div class="col-md-4 mb-3">
+        <h5 class="text-end">درباره ما</h5>
+        <p class="text-end">شرکت ما در زمینه طراحی وب، سئو و خدمات دیجیتال فعالیت می‌کند.</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5>لینک‌های مفید</h5>
+        <ul class="list-unstyled">
+          <li><a href="#scrollspyHeading1">خانه</a></li>
+          <li><a href="#scrollspyHeading3">خدمات</a></li>
+          <li><a href="#scrollspyHeading2">چرا ما</a></li>
+          <li><a href="#scrollspyHeading4">ارتباط با ما</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mb-3">
+        <h5 class="">تماس با ما</h5>
+        <p class="">ایمیل: info@example.com</p>
+        <p class="">تلفن:09365000000</p>
+      </div>
+    </div>
+    <hr style="border-color: rgba(255,255,255,0.2);">
+    <p class="text-center mb-0">&copy; 2025  تمامی حقوق محفوظ است. mr afshin</p>
+  </div>
+</footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <script>
+    
+  // دکمه اسکرول به بالا
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollBtn.style.display = "block";
+    } else {
+      scrollBtn.style.display = "none";
+    }
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+</body>
+</html>

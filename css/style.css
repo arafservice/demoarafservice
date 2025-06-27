@@ -1,0 +1,187 @@
+ body {
+      font-family: 'Vazirmatn', sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+      background: #f8f9fa;
+      color: #212529;
+      padding-top: 70px;
+    }
+    body.dark-mode {
+      background-color: #121212;
+      color: #eee;
+    }
+    .dark-mode .card, .dark-mode .count-box, .dark-mode footer {
+      background-color: #1e1e1e;
+      color: #ddd;
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1050;
+      background-color: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
+    }
+    body.dark-mode .navbar {
+      background-color: #1a1a1a;
+    }
+    .card-img-top {
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px 6px 0 0;
+    }
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+    @media only screen and (max-width: 768px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+    .gallery {
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fff;
+      transition: 0.3s;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    .gallery:hover {
+      border-color: #777;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      display: block;
+      object-fit: cover;
+    }
+    .desc {
+      padding: 12px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #333;
+    }
+    body.dark-mode .desc {
+      color: #ddd;
+    }
+    #partnersCarousel .carousel-item img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      background: #fff;
+    }
+    #partnersCarousel .carousel-item h4 {
+      color: #222;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+    body.dark-mode #partnersCarousel .carousel-item h4 {
+      color: #ddd;
+    }
+    .counts-section {
+      background: #007bff;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 60px;
+    }
+    .count-box {
+      display: inline-block;
+      width: 22%;
+      margin: 10px 1%;
+      padding: 20px;
+      border-radius: 10px;
+      background: rgba(255 255 255 / 0.2);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      font-weight: 700;
+      font-size: 2.5rem;
+      transition: background 0.3s;
+    }
+    .count-label {
+      font-size: 1rem;
+      margin-top: 8px;
+      display: block;
+      font-weight: 500;
+    }
+    body.dark-mode .counts-section {
+      background: #0056b3;
+    }
+    .contact-section {
+      max-width: 600px;
+      margin: 0 auto 60px;
+      padding: 30px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: background 0.3s;
+    }
+    body.dark-mode .contact-section {
+      background: #222;
+    }
+    .contact-section h2 {
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    .form-control {
+      border-radius: 8px;
+      margin-bottom: 15px;
+      transition: box-shadow 0.3s ease;
+    }
+    .form-control:focus {
+      box-shadow: 0 0 8px #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary {
+      width: 100%;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+    footer {
+      background: #343a40;
+      color: #adb5bd;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #adb5bd;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+    footer .footer-section {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 576px) {
+      footer .footer-section {
+        text-align: center;
+      }
+    }
+    /* اسلایدر */
+    #mainCarousel .carousel-inner img {
+      height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+    }

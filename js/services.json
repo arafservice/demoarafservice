@@ -1,0 +1,32 @@
+[
+    {
+        "title": "برنامه نویسی اختصاصی",
+        "description": "کدنویسی پروژه‌های شخصی و سازمانی",
+        "image": "slider4.png"
+    },
+    {
+        "title": "طراحی فروشگاه اینترنتی",
+        "description": "راه‌اندازی فروشگاه با درگاه، پنل پیامکی و ...",
+        "image": "kk.jpeg"
+    },
+    {
+        "title": "برنامه‌نویسی اختصاصی",
+        "description": "کدنویسی پروژه‌های شخصی، شرکتی و اپلیکیشن‌های وب",
+        "image": "images\/service1.jpg"
+    },
+    {
+        "title": "طراحی سایت وردپرسی",
+        "description": "طراحی سایت با قالب‌های حرفه‌ای مثل Astra، Flatsome و ...",
+        "image": "images\/service2.jpg"
+    },
+    {
+        "title": "سئو و بهینه‌سازی",
+        "description": "افزایش رتبه گوگل، تولید محتوا و بهبود ساختار سایت",
+        "image": "images\/service3.jpg"
+    },
+    {
+        "title": "",
+        "description": "",
+        "image": ""
+    }
+]

@@ -1,0 +1,55 @@
+<head>
+    
+</head>
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>ورود|ثبت نام</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+    <style>
+           body {
+        font-family: 'Vazirmatn', sans-serif;
+           }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #eee;
+    }
+    .login-box {
+      max-width: 400px;
+      margin: 100px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-box">
+  <h4 class="mb-4 text-center">فرم ورود</h4>
+ 
+    <!-- <div class="alert alert-danger text-center"><?php echo $login_error; ?></div> -->
+ 
+  <form method="post" action="user_panel.php">
+    <div class="mb-3">
+      <label class="form-label">نام کاربری</label>
+      <input type="text" name="username" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">رمز عبور</label>
+      <input type="password" name="password" class="form-control" required>
+    </div>
+    <div class="d-grid">
+      <button type="submit" class="btn btn-primary">ورود</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

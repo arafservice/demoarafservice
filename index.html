@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>قالب حرفه ای ها</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+ 
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">لوگو</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="تغییر ناوبری">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#whyUs">چرا ما</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">خدمات ما</a></li>
+        <li class="nav-item"><a class="nav-link" href="login_panel.php">ورود</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="#partners">همکاران ما</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">تماس با ما</a></li>
+      </ul>
+      <button id="toggleTheme" class="btn btn-outline-primary ms-3">حالت شب</button>
+    </div>
+  </div>
+</nav>
+
+<!-- اسلایدر اصلی -->
+<section class="container mb-5">
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="اسلاید 1"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="اسلاید 2"></button>
+      <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="اسلاید 3"></button>
+    </div>
+    <div class="carousel-inner rounded-3 shadow">
+      <div class="carousel-item active">
+        <img src="image1.jpg" class="d-block w-100" alt="اسلاید 1">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>طراحی حرفه‌ای وب‌سایت</h5>
+          <p>طراحی زیبا و مدرن با استفاده از تکنولوژی‌های روز</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image1.jpg" class="d-block w-100" alt="اسلاید 2">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>برنامه‌نویسی تخصصی</h5>
+          <p>توسعه نرم‌افزار با بهترین استانداردها</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image1.jpg" class="d-block w-100" alt="اسلاید 3">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+          <h5>خدمات پشتیبانی کامل</h5>
+          <p>پشتیبانی 24 ساعته و پاسخگو به نیازهای شما</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">قبلی</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">بعدی</span>
+    </button>
+  </div>
+</section>
+
+<section id="whyUs" class="container mb-5">
+  <h2 class="text-center mb-4">چرا ما</h2>
+  <div class="row" id="cards-container"></div>
+</section>
+<div class="row" id="cards-container">
+
+
+<section id="services" class="container mb-5">
+  <h2 class="text-center mb-4">خدمات ما</h2>
+  <div class="d-flex flex-wrap justify-content-center">
+    <div class="responsive gallery">
+      <img src="kk.jpeg" alt="برنامه نویسی" />
+      <div class="desc">برنامه نویسی</div>
+    </div>
+    <div class="responsive gallery">
+      <img src="kk.jpeg" alt="طراحی سایت کدنویسی" />
+      <div class="desc">طراحی سایت با کدنویسی</div>
+    </div>
+    <div class="responsive gallery">
+      <img src="kk.jpeg" alt="طراحی سایت وردپرس" />
+      <div class="desc">طراحی سایت با وردپرس</div>
+    </div>
+    <div class="responsive gallery">
+      <img src="kk.jpeg" alt="گرافیک" />
+      <div class="desc">طراحی گرافیک</div>
+    </div>
+  </div>
+</section>
+</div>
+
+<section id="partners" class="container mb-5">
+  <h2 class="text-center mb-4">همکاران ما</h2>
+  <div id="partnersCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="همکار 1"></button>
+      <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="1" aria-label="همکار 2"></button>
+      <button type="button" data-bs-target="#partnersCarousel" data-bs-slide-to="2" aria-label="همکار 3"></button>
+    </div>
+    <div class="carousel-inner text-center">
+      <div class="carousel-item active">
+        <img src="kk.jpeg" alt="احمد" />
+        <h4>احمد (برنامه نویس)</h4>
+      </div>
+      <div class="carousel-item">
+        <img src="kk.jpeg" alt="علی" />
+        <h4>علی (طراح سایت وردپرس)</h4>
+      </div>
+      <div class="carousel-item">
+        <img src="kk.jpeg" alt="مهدی" />
+        <h4>مهدی (طراح سایت کدنویسی)</h4>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#partnersCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">قبلی</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#partnersCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">بعدی</span>
+    </button>
+  </div>
+</section>
+
+<section class="counts-section container">
+  <div class="count-box">
+    <div class="count" data-target="1500">0</div>
+    <span class="count-label">مشتریان راضی</span>
+  </div>
+  <div class="count-box">
+    <div class="count" data-target="320">0</div>
+    <span class="count-label">پروژه‌های انجام شده</span>
+  </div>
+  <div class="count-box">
+    <div class="count" data-target="50">0</div>
+    <span class="count-label">جوایز کسب شده</span>
+  </div>
+  <div class="count-box">
+    <div class="count" data-target="10">0</div>
+    <span class="count-label">سال تجربه</span>
+  </div>
+</section>
+
+<section id="contact" class="contact-section container">
+  <h2>تماس با ما</h2>
+  <form id="contactForm" novalidate>
+    <input type="text" class="form-control" placeholder="نام و نام خانوادگی" required />
+    <input type="email" class="form-control" placeholder="ایمیل" required />
+    <input type="tel" class="form-control" placeholder="شماره تماس" required pattern="[0-9]{10,11}" />
+    <textarea class="form-control" rows="4" placeholder="پیام شما" required></textarea>
+    <button type="submit" class="btn btn-primary">ارسال پیام</button>
+  </form>
+</section>
+
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container text-md-start">
+    <div class="row">
+      <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+        <h5 class="text-uppercase fw-bold mb-4 text-end">درباره ما</h5>
+        <p>شرکت ما در زمینه طراحی وب، سئو و خدمات دیجیتال فعالیت می‌کند.</p>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+        <h5 class="text-uppercase fw-bold mb-4">لینک‌های مفید</h5>
+        <p><a href="#home" class="text-white text-decoration-none">خانه</a></p>
+        <p><a href="#services" class="text-white text-decoration-none">خدمات</a></p>
+        <p><a href="#about" class="text-white text-decoration-none">چرا ما</a></p>
+        <p><a href="#team" class="text-white text-decoration-none">همکاران ما</a></p>
+      </div>
+      <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4">
+        <h5 class="text-uppercase fw-bold mb-4">تماس با ما</h5>
+        <p><i class="bi bi-envelope-fill"></i> info@example.com</p>
+        <p><i class="bi bi-telephone-fill"></i> 09365016910</p>
+      </div>
+    </div>
+    <div class="text-center pt-3">
+      <small>© 2025 تمامی حقوق محفوظ است | طراحی شده توسط افشین</small>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
+</body>
+</html>
